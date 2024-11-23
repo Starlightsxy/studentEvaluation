@@ -1,17 +1,3 @@
-# studentEvaluation
-学生评价老师自动脚本
-
-只需将该脚本的内容复制粘贴到控制台即可，只针对于某个学校网站
-
-状态有：及格、中等、良好、优秀、不及格。五种状态
-
-分别对应着，1 3 5 7 9 ,如需要指定的随机选项，则就可以修改radioNodeList里的值，并且将下面的
-
-const index = Math.floor(Math.random() * 2)  这里的随机数更改对应的即可，例如我这里是2位数只有5和7，那么这里就直接*2就可以了
-
-这里只设置了良好和优秀的单选框
-
-```javascript
 // 良好和优秀单选框
     const radioNodeList = [5, 7];
     // 评语
@@ -86,8 +72,3 @@ const index = Math.floor(Math.random() * 2)  这里的随机数更改对应的�
         document.getElementById("btn_ok").click()
     }
     evaluateItem(len)
-```
-
-该脚本可能还有一些不够完善
-
-感谢支持！！！
